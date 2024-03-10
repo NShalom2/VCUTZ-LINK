@@ -1,0 +1,1588 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*Header Styling*/
+
+.header {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    background: #2c3e50;
+}
+
+.nav-menu > ul {
+    display: flex;
+}
+
+.menu-element {
+    margin: 2.5rem 0.9375rem 1.875rem 2.5rem; /* Converted from pixels to rem */
+    padding: 1.875rem; /* Converted from pixels to rem */
+    font-size: 1.563rem; /* Converted from pixels to rem */
+    font-family: "Inria Sans", sans-serif;
+}
+
+.menu-element > a {
+    color: white;
+    transition: 0.3s;
+}
+
+.menu-element > a:hover {
+    color: firebrick;
+}
+
+.logo-image {
+    height: 7.8125rem; /* Converted from pixels to rem */
+    padding: 0.9375rem 7.5rem; /* Converted from pixels to rem */
+}
+
+.toggle-btn {
+    float: right;
+    color: white;
+    font-size: 2.5rem; /* Converted from pixels to rem */
+    margin-top: 3.75rem; /* Converted from pixels to rem */
+    margin-right: 2.5rem; /* Converted from pixels to rem */
+    display: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 6.875rem; /* Converted from pixels to rem */
+    height: 0;
+    width: 17.5rem; /* Converted from pixels to rem */
+    text-align: center;
+    background: #203345;
+    border-radius: 0.625rem; /* Converted from pixels to rem */
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 2;
+}
+
+.dropdown-menu.open {
+    height: 25.625rem; /* Converted from pixels to rem */
+    transition: 0.3s;
+}
+
+.dropdown-menu li {
+    margin: 1.875rem; /* Converted from pixels to rem */
+    padding: 0.4375rem; /* Converted from pixels to rem */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Background Video Styling*/
+
+.video {
+    width: 100%;
+    filter: brightness(55%);
+    z-index: 1;
+}
+
+/*Attention Grabber Text and Button Styling*/
+
+.background-text-and-button {
+    margin-left: 1.25rem; /* Converted from pixels to rem */
+}
+
+.background-text > h1 {
+    position: absolute;
+    padding: 1.25rem 6.25rem; /* Converted from pixels to rem */
+    color: white;
+    font-size: 4.375rem; /* Converted from pixels to rem */
+    top: 45%;
+    left: 10%;
+    width: 43.75rem; /* Converted from pixels to rem */
+    line-height: 6.25rem; /* Converted from pixels to rem */
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+}
+
+.buttons {
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+.buttons:hover {
+    background: #2c3e60;
+}
+
+.btn-1 {
+    padding: 2.8125rem 3.125rem; /* Converted from pixels to rem */
+    position: absolute;
+    top: 85%;
+    left: 15%;
+    border-radius: 0.625rem; /* Converted from pixels to rem */
+    background: #2c3e50;
+    color: white;
+}
+
+.btn-1 > span {
+    font-size: 1.563rem; /* Converted from pixels to rem */
+}
+
+/*Call to Action Styling*/
+
+.call-to-action {
+    height: 28.125rem; /* Converted from pixels to rem */
+    text-align: center;
+}
+
+.title-1 {
+    margin-top: 2.5rem; /* Converted from pixels to rem */
+    font-size: 2.188rem; /* Converted from pixels to rem */
+    font-family: "Jacques Francois Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #2c3e50;
+    padding: 1.25rem 31.25rem; /* Converted from pixels to rem */
+}
+
+.button-2 {
+    margin-top: 1.25rem; /* Converted from pixels to rem */
+    padding: 1.875rem; /* Converted from pixels to rem */
+}
+
+.btn-2 {
+    padding: 4.375rem 5rem; /* Converted from pixels to rem */
+    font-size: 1.25rem; /* Converted from pixels to rem */
+    border-radius: 0.625rem; /* Converted from pixels to rem */
+    background: #2c3e50;
+    color: white;
+}
+
+/*Styling for Text Container 1*/
+
+.text-container-1 {
+    height: 31.25rem; /* Converted from pixels to rem */
+    text-align: center;
+    background: #2c3e50;
+    color: white;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.188rem; /* Converted from pixels to rem */
+}
+
+.paragraph-1, .paragraph-2, .paragraph-3 {
+    padding: 3.125rem 15.625rem; /* Converted from pixels to rem */
+}
+
+.clickable-link {
+    text-decoration: underline;
+    color: #B888B6;
+    transition: 0.2s;
+}
+
+.clickable-link:hover {
+    color: indianred;
+    transition: 0.3s;
+}
+
+/*Image Container*/
+
+.slide-show-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.title-2 h2 {
+    text-align: center;
+}
+
+.slide-show {
+    display: flex;
+    overflow: hidden;
+}
+
+.image-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    padding: 1.875rem; /* Converted from pixels to rem */
+}
+
+.image-container img {
+    width: 25rem; /* Adjust the width of each image - Converted from pixels to rem */
+    height: auto;
+    margin-right: 0.625rem; /* Adjust the spacing between images - Converted from pixels to rem */
+}
+
+.title-2 > h2 {
+    margin-top: 1.875rem; /* Converted from pixels to rem */
+    font-size: 3.75rem; /* Converted from pixels to rem */
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/*Styling for Text Container 2*/
+
+.text-container-2 {
+    text-align: center;
+    height: 34.375rem; /* Converted from pixels to rem */
+    background: #CBCACA;
+}
+
+.paragraph-4 > p {
+    width: auto;
+    padding: 3.125rem 25rem; /* Converted from pixels to rem */
+    font-family: "Inria Sans", sans-serif;
+    font-size: 2.5rem; /* Converted from pixels to rem */
+}
+
+.btn-3 {
+    padding: 3.125rem 3.125rem; /* Converted from pixels to rem */
+    border-radius: 0.9375rem; /* Converted from pixels to rem */
+    color: white;
+    background: #2c3e50;
+    font-size: 1.25rem; /* Converted from pixels to rem */
+}
+
+.paragraph-5 {
+    font-family: "Inria Sans", sans-serif;
+    margin-top: 1.5625rem; /* Converted from pixels to rem */
+}
+
+.paragraph-5 > p {
+    font-size: 2.5rem; /* Converted from pixels to rem */
+    padding: 1.875rem; /* Converted from pixels to rem */
+}
+
+.paragraph-5 > span {
+    padding: 1.875rem; /* Converted from pixels to rem */
+    width: auto;
+    font-size: 2.5rem; /* Converted from pixels to rem */
+}
+
+/*Footer Styling*/
+
+.footer {
+    background: #2c3e50;
+    height: 42.1875rem; /* Converted from pixels to rem */
+}
+
+.footer-logo {
+    padding: 1.875rem; /* Converted from pixels to rem */
+    text-align: center;
+}
+
+.footer-image {
+    height: 7.8125rem; /* Converted from pixels to rem */
+}
+
+.footer-links {
+    margin-top: 1.875rem; /* Converted from pixels to rem */
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    height: 21.875rem; /* Converted from pixels to rem */
+    color: white;
+    font-family: "Inria Sans", sans-serif;
+}
+
+.footer-links-1, .footer-links-2, .contact  {
+    text-align: center;
+    height: 18.75rem; /* Converted from pixels to rem */
+}
+
+.footer-links-1 > h2, .footer-links-2 > h2 {
+    padding: 1.25rem; /* Converted from pixels to rem */
+    font-size: 2.5rem; /* Converted from pixels to rem */
+    font-family: "Inria Sans", sans-serif;
+}
+
+.locations > ul > li, .footer-menu > ul > li {
+    padding: 0.5rem; /* Converted from pixels to rem */
+    font-size: 1.563rem; /* Converted from pixels to rem */
+}
+
+.footer-menu ul li a {
+    color: white;
+}
+
+.footer-menu ul li a:hover {
+    color: firebrick;
+}
+
+.contact h2 {
+    font-size: 2.5rem; /* Converted from pixels to rem */
+    padding: 1.25rem; /* Converted from pixels to rem */
+}
+
+.phone-and-email p {
+    font-size: 1.375rem; /* Converted from pixels to rem */
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    padding: 3.125rem 9.375rem; /* Converted from pixels to rem */
+}
+
+.socials p {
+    font-size: 1.563rem; /* Converted from pixels to rem */
+}
+
+.btn-2-2 a button {
+    padding: 2.5rem 3.75rem; /* Converted from pixels to rem */
+}
+
+.icons {
+    padding: 1.25rem;
+    display: grid;
+    grid-template-columns: 30% 35% 35%;
+}
+
+.fa-brands {
+    font-size: 1.875rem; /* Converted from pixels to rem */
+    color: white;
+}
+
+.copyright p {
+    text-align: center;
+    font-size: 1.563rem; /* Converted from pixels to rem */
+    color: white;
+    font-family: "Inria Sans", sans-serif;
+}
+
+
+
+/*CONTACT US PAGE*/
+
+.contact-page {
+    font-family: "Inria Sans", sans-serif;
+}
+
+.container {
+    max-width: 31.25rem; /* Converted from pixels to rem */
+    margin: 3.125rem auto; /* Converted from pixels to rem */
+    background-color: #fff;
+    padding: 1.875rem; /* Converted from pixels to rem */
+    border-radius: 0.5rem; /* Converted from pixels to rem */
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    padding: 0.9375rem 0; /* Converted from pixels to rem */
+}
+
+.form-group {
+    margin-bottom: 1.25rem; /* Converted from pixels to rem */
+    font-size: 1.25rem; /* Converted from pixels to rem */
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.3125rem; /* Converted from pixels to rem */
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.625rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.3125rem; /* Converted from pixels to rem */
+    box-sizing: border-box;
+}
+textarea {
+    height: 9.375rem; /* Converted from pixels to rem */
+}
+input[type="submit"] {
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    padding: 0.625rem 1.25rem; /* Converted from pixels to rem */
+    cursor: pointer;
+    border-radius: 0.3125rem; /* Converted from pixels to rem */
+}
+input[type="submit"]:hover {
+    background-color: #203345;
+}
+
+
+/*Services Page*/
+
+
+.prices {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.875rem; /* Converted from pixels to rem */
+    margin: 3.125rem; /* Converted from pixels to rem */
+}
+
+.services {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.context {
+    text-align: center;
+    padding: 0 3.75rem; /* Converted from pixels to rem */
+}
+
+.context > p {
+    padding: 0.625rem 5rem; /* Converted from pixels to rem */
+}
+
+.table {
+    padding: 1.25rem; /* Converted from pixels to rem */
+}
+
+td {
+    padding: 1.25rem 15.625rem; /* Converted from pixels to rem */
+}
+
+.table-header > th {
+    padding: 1.25rem; /* Converted from pixels to rem */
+}
+
+.table-header > th:nth-child(1){
+    text-align: left;
+}
+
+.table-rows:nth-child(odd) {
+    background-color: lightgrey;
+}
+
+table {
+    margin: 0;
+    border: 0.0625rem solid black;
+}
+
+table td, table th {
+    border: 0.0625rem solid black;
+    font-size: 1.25rem; /* Converted from pixels to rem */
+}
+
+.left-table {
+    text-align: left;
+    padding-left: 1.25rem; /* Converted from pixels to rem */
+}
+
+.right-table {
+    text-align: right;
+    padding-right: 1.25rem; /* Converted from pixels to rem */
+}
+
+.button-container-4 {
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem; /* Converted from pixels to rem */
+}
+
+.button-4 {
+    display: block;
+    height: 7.8125rem; /* Converted from pixels to rem */
+    width: 15.625rem; /* Converted from pixels to rem */
+    background-color: #2c3e50;
+    border-radius: 0.625rem; /* Converted from pixels to rem */
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    font-size: 1.563rem; /* Converted from pixels to rem */
+    transition: background-color 0.3s ease;
+    padding: 1.25rem; /* Converted from pixels to rem */
+}
+
+.content-message {
+    height: 31.25rem; /* Converted from pixels to rem */
+}
+
+.thank-you-message {
+    text-align: center;
+    font-family: "Inria Sans", sans-serif;
+    font-size: 1.563rem; /* Converted from pixels to rem */
+}
+
+.thank-you-message h1 {
+    margin: 3.125rem; /* Converted from pixels to rem */
+    padding: 1.875rem; /* Converted from pixels to rem */
+}
+
+.btn-2-1 {
+    text-align: center;
+}
+
+.btn-2-1 a button {
+    padding: 2.1875rem 3.125rem; /* Converted from pixels to rem */
+}
+
+@media only screen and (min-width: 22.5rem) and (max-width: 26.875rem) { /* Converted from pixels to rem */
+
+    .header {
+        height: 5rem; /* Converted from pixels to rem */
+    }
+
+    .logo-image {
+        height: 3.4375rem; /* Converted from pixels to rem */
+        padding: 0.875rem 3.125rem; /* Converted from pixels to rem */
+    }
+
+    .nav-menu .menu-element {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: block;
+        font-size: 2.0625rem; /* Converted from pixels to rem */
+        margin-top: 1.5625rem; /* Converted from pixels to rem */
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu .menu-element {
+        font-size: 1.25rem; /* Converted from pixels to rem */
+    }
+
+    .background-text h1 {
+        font-size: 1.125rem; /* Converted from pixels to rem */
+        padding: 1.875rem; /* Converted from pixels to rem */
+        top: 14%; /* Converted from pixels to rem */
+        left: 8px;
+        width: 15.625rem; /* Converted from pixels to rem */
+        height: 7.8125rem; /* Converted from pixels to rem */
+        line-height: 2.1875rem; /* Converted from pixels to rem */
+    }
+
+    .btn-1 {
+        padding: 0.9375rem 1.5625rem; /* Converted from pixels to rem */
+        top: 32%; /* Converted from pixels to rem */
+        left: 9%; /* Converted from pixels to rem */
+    }
+
+    .btn-1 span {
+        font-size: 0.625rem; /* Converted from pixels to rem */
+    }
+
+    .call-to-action {
+        height: 12.5rem; /* Converted from pixels to rem */
+    }
+
+    .title-1 {
+        padding: 0 6.25rem; /* Converted from pixels to rem */
+    }
+
+    .title-1 h2 {
+        font-size: 1.25rem; /* Converted from pixels to rem */
+    }
+
+    .button-2 {
+        padding: 0.625rem; /* Converted from pixels to rem */
+    }
+
+    .btn-2 {
+        padding: 0.9375rem 1.875rem; /* Converted from pixels to rem */
+    }
+
+    .btn-2 span {
+        font-size: 0.9375rem; /* Converted from pixels to rem */
+    }
+
+    .text-container-1 {
+        height: 20.3125rem; /* Converted from pixels to rem */
+    }
+
+    .paragraph-1, .paragraph-2, .paragraph-3 {
+        font-size: 0.9375rem; /* Converted from pixels to rem */
+        padding: 1.875rem 1.875rem; /* Converted from pixels to rem */
+    }
+
+    .slide-show-container {
+        height: 23.4375rem; /* Converted from pixels to rem */
+    }
+
+    .slide-show {
+        grid-template-columns: 1.5625rem 15.625rem 1.5625rem; /* Converted from pixels to rem */
+    }
+
+    .image-container {
+        display: flex;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .title-2 h2 {
+        font-size: 1.875rem; /* Converted from pixels to rem */
+    }
+
+    .image-container img {
+        height: 15.625rem; /* Converted from pixels to rem */
+    }
+
+    .text-container-2 {
+        height: 21.875rem; /* Converted from pixels to rem */
+    }
+
+    .paragraph-4 p {
+        font-size: 1.375rem; /* Converted from pixels to rem */
+        padding: 1.875rem 1.875rem 1.5625rem 1.875rem; /* Converted from pixels to rem */
+    }
+
+    .btn-3 {
+        padding: 1.25rem 1.875rem; /* Converted from pixels to rem */
+    }
+
+    .btn-3 span {
+        font-size: 0.9375rem; /* Converted from pixels to rem */
+    }
+
+    .paragraph-5 p {
+        font-size: 1.375rem; /* Converted from pixels to rem */
+        padding: 0.625rem; /* Converted from pixels to rem */
+    }
+
+    .paragraph-5 span {
+        font-size: 1.5625rem; /* Converted from pixels to rem */
+    }
+
+    .footer {
+        height: 27.8125rem; /* Converted from pixels to rem */
+    }
+
+    .footer-logo {
+        padding: 1.25rem 0.9375rem; /* Converted from pixels to rem */
+    }
+
+    .footer-image {
+        height: 4.6875rem; /* Converted from pixels to rem */
+    }
+
+    .footer-links {
+        height: 15.625rem; /* Converted from pixels to rem */
+        margin-top: 0;
+    }
+
+    .footer-links-1 h2 {
+        font-size: 1.125rem; /* Converted from pixels to rem */
+    }
+
+    .locations ul li {
+        font-size: 0.8125rem; /* Converted from pixels to rem */
+    }
+
+    .footer-links-2 h2 {
+        font-size: 1.125rem; /* Converted from pixels to rem */
+    }
+
+    .footer-menu ul li {
+        font-size: 0.8125rem; /* Converted from pixels to rem */
+    }
+
+    .contact h2 {
+        font-size: 1.125rem; /* Converted from pixels to rem */
+    }
+
+    .phone-and-email p {
+        font-size: 0.5625rem; /* Converted from pixels to rem */
+    }
+
+    .socials {
+        padding: 1.875rem 0.9375rem; /* Converted from pixels to rem */
+    }
+
+    .socials p {
+        font-size: 1.0625rem; /* Converted from pixels to rem */
+    }
+
+    .icons {
+        padding: 0.625rem;
+    }
+
+    .fa-brands {
+        font-size: 1.25rem; /* Converted from pixels to rem */
+    }
+
+    .copyright p {
+        font-size: 1.25rem; /* Converted from pixels to rem */
+    }
+
+    .context {
+        width: 18.125rem; /* Converted from pixels to rem */
+        padding: 0.3125rem; /* Converted from pixels to rem */
+        font-size: 0.9375rem; /* Converted from pixels to rem */
+    }
+
+    .context p {
+        padding: 0.625rem; /* Converted from pixels to rem */
+        text-align: center;
+    }
+
+    .table {
+        padding: 0.3125rem; /* Converted from pixels to rem */
+    }
+
+    .table table {
+        width: 23.125rem; /* Converted from pixels to rem */
+    }
+
+    .left-table {
+        padding: 0.625rem; /* Converted from pixels to rem */
+        width: 8.125rem; /* Converted from pixels to rem */
+        font-size: 0.9375rem; /* Converted from pixels to rem */
+    }
+
+    .right-table {
+        padding: 0.625rem; /* Converted from pixels to rem */
+        font-size: 0.9375rem; /* Converted from pixels to rem */
+        width: 6.25rem; /* Converted from pixels to rem */
+    }
+
+    .button-container-4 {
+        padding: 0 0 1.25rem 0; /* Converted from pixels to rem */
+    }
+
+    .button-4 {
+        width: 9.375rem; /* Converted from pixels to rem */
+        height: 4.6875rem; /* Converted from pixels to rem */
+    }
+
+    .button-4 span {
+        font-size: 1.125rem; /* Converted from pixels to rem */
+    }
+
+    .container {
+        width: 18.75rem; /* Converted from pixels to rem */
+    }
+
+    .form-group {
+        margin-bottom: 0.9375rem; /* Converted from pixels to rem */
+    }
+}
+
+@media only screen and (min-width: 431px) and (max-width: 640px) {
+
+    .header {
+        height: 6.875rem;
+    }
+
+    .toggle-btn {
+        margin-top: 1.875rem;
+    }
+
+    .logo-image {
+        height: 4.688rem;
+        padding-left: 4.688rem;
+    }
+
+    .nav-menu .menu-element {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu .menu-element {
+        font-size: 1.313rem;
+    }
+
+    .dropdown-menu.open {
+        height: 26.563rem;
+    }
+
+    .background-text h1 {
+        font-size: 1.438rem;
+        padding: 2.5rem 2.188rem;
+        top: 5.625rem;
+        width: 18.75rem;
+        line-height: 2.813rem;
+    }
+
+    .btn-1 {
+        padding: 1.25rem 2.188rem;
+        top: 17.5rem;
+        left: 4.688rem;
+    }
+
+    .btn-1 span {
+        font-size: 0.938rem;
+    }
+
+    .call-to-action {
+        height: 15.625rem;
+    }
+
+    .title-1 {
+        padding: 0 4.375rem;
+    }
+
+    .title-1 h2 {
+        font-size: 1.75rem;
+    }
+
+    .btn-2 {
+        padding: 1.25rem 1.875rem;
+    }
+
+    .btn-2 span {
+        font-size: 0.938rem;
+    }
+
+    .text-container-1 {
+        height: 26.25rem;
+    }
+
+    .paragraph-1, .paragraph-2, .paragraph-3 {
+        padding: 2.188rem 3.75rem;
+        font-size: 1.25rem;
+    }
+
+    .slide-show-container {
+        height: 28.125rem;
+    }
+
+    .title-2 h2 {
+        font-size: 2.375rem;
+    }
+
+    .image-container img {
+        height: 20.625rem;
+        width: auto;
+    }
+
+    .text-container-2 {
+        height: 23.438rem;
+    }
+
+    .paragraph-4 p {
+        font-size: 1.563rem;
+        padding: 1.875rem;
+    }
+
+    .btn-3 {
+        padding: 1.25rem 1.563rem;
+    }
+
+    .btn-3 span {
+        font-size: 0.938rem;
+    }
+
+    .paragraph-5 p {
+        font-size: 1.375rem;
+    }
+
+    .paragraph-5 span {
+        font-size: 1.625rem;
+    }
+
+    .footer {
+        height: 31.25rem;
+    }
+
+    .footer-image {
+        height: 4.688rem;
+    }
+
+    .footer-links {
+        height: 15.625rem;
+    }
+
+    .footer-links-1 h2 {
+        font-size: 1.563rem;
+    }
+
+    .locations ul li {
+        font-size: 1.25rem;
+    }
+
+    .footer-links-2 h2 {
+        font-size: 1.563rem;
+    }
+
+    .footer-menu ul li {
+        font-size: 1.25rem;
+    }
+
+    .contact h2 {
+        font-size: 1.563rem;
+    }
+
+    .phone-and-email p {
+        font-size: 0.625rem;
+    }
+
+    .socials {
+        padding: 3.125rem;
+    }
+
+    .socials p {
+        font-size: 1.25rem;
+    }
+
+    .fa-brands {
+        font-size: 1.25rem;
+    }
+
+    .copyright {
+        padding-top: 1.25rem;
+    }
+
+    .copyright p {
+        font-size: 1.25rem;
+    }
+
+    .context {
+        font-size: 1.375rem;
+        padding-bottom: 1.25rem;
+        width: auto;
+    }
+
+    .context p {
+        padding: 1.25rem;
+        text-align: center;
+    }
+
+    .table {
+        padding: 1.25rem;
+    }
+
+    .table table {
+        width: 34.375rem;
+    }
+
+    .left-table {
+        padding: 0.625rem;
+        width: 8.125rem;
+        font-size: 0.938rem;
+    }
+
+    .right-table {
+        padding: 0.625rem;
+        font-size: 0.938rem;
+        width: 6.25rem;
+    }
+
+    .button-container-4 {
+        padding-bottom: 3.125rem;
+    }
+
+    .button-4 {
+        height: 5rem;
+        width: 10rem;
+    }
+
+    .button-4 span {
+        font-size: 1.25rem;
+    }
+
+    .footer-logo {
+        padding: 1.25rem;
+    }
+
+    .footer-links-1 h2,
+    .footer-links-2 h2,
+    .contact h2 {
+        font-size: 1.563rem;
+    }
+
+    .locations ul li,
+    .footer-menu ul li a {
+        font-size: 1.125rem;
+    }
+
+    .socials {
+        padding: 1.875rem;
+        font-size: 0.625rem;
+    }
+
+    .icons {
+        padding: 0.313rem;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 867px){
+
+    .header {
+        height: 6.875rem;
+    }
+
+    .toggle-btn {
+        margin-top: 2.5rem;
+    }
+
+    .logo-image {
+        height: 5rem;
+        padding-left: 3.75rem;
+    }
+
+    .nav-menu .menu-element {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu .menu-element {
+        font-size: 1.313rem;
+    }
+
+    .dropdown-menu.open {
+        height: 26.563rem;
+    }
+
+    .background-text h1 {
+        font-size: 1.875rem;
+        padding: 3.125rem 2.5rem;
+        top: 6.25rem;
+        left: 1.875rem;
+        width: 25.625rem;
+        line-height: 3.75rem;
+    }
+
+    .btn-1 {
+        padding: 1.25rem 1.875rem;
+        top: 21.875rem;
+        left: 3.125rem;
+    }
+
+    .btn-1 span {
+        font-size: 0.938rem;
+    }
+
+    .call-to-action {
+        height: 15.625rem;
+    }
+
+    .title-1 {
+        padding: 0 6.25rem;
+    }
+
+    .title-1 h2 {
+        font-size: 2.188rem;
+    }
+
+    .btn-2 {
+        padding: 1.25rem 1.875rem;
+    }
+
+    .btn-2 span {
+        font-size: 1rem;
+    }
+
+    .text-container-1 {
+        height: 28.125rem;
+    }
+
+    .paragraph-1, .paragraph-2, .paragraph-3 {
+        font-size: 1.5rem;
+        padding: 2.188rem 6.25rem;
+    }
+
+    .slide-show-container {
+        height: 28.125rem;
+    }
+
+    .title-2 h2 {
+        font-size: 2.375rem;
+    }
+
+    .image-container img {
+        height: 20.625rem;
+        width: auto;
+    }
+
+    .text-container-2 {
+        height: 25rem;
+    }
+
+    .paragraph-4 p {
+        font-size: 1.25rem;
+        padding: 3.125rem;
+    }
+
+    .btn-3 {
+        padding: 1.25rem 2.188rem;
+    }
+
+    .btn-3 span {
+        font-size: 1rem;
+    }
+
+    .paragraph-5 p {
+        font-size: 1.563rem;
+    }
+
+    .paragraph-5 span {
+        font-size: 1.813rem;
+    }
+
+    .footer {
+        height: 32.5rem;
+    }
+
+    .footer-image {
+        height: 5rem;
+    }
+
+    .footer-links {
+        height: 18.75rem;
+    }
+
+    .footer-links-1 h2 {
+        font-size: 1.75rem;
+    }
+
+    .locations ul li {
+        font-size: 1.438rem;
+    }
+
+    .footer-links-2 h2 {
+        font-size: 1.75rem;
+    }
+
+    .footer-menu ul li {
+        font-size: 1.375rem;
+    }
+
+    .contact h2 {
+        font-size: 1.75rem;
+    }
+
+    .phone-and-email p {
+        font-size: 1.25rem;
+    }
+
+    .socials {
+        padding: 3.125rem;
+    }
+
+    .socials p {
+        font-size: 1.563rem;
+    }
+
+    .icon {
+        height: 2.25rem;
+    }
+
+    .facebook-icon {
+        height: 2.188rem;
+    }
+
+    .copyright p {
+        font-size: 1.438rem;
+    }
+
+    .context {
+        font-size: 1.563rem;
+        padding-bottom: 1.25rem;
+        width: auto;
+    }
+
+    .context p {
+        padding: 1.25rem;
+        text-align: center;
+    }
+
+    .table {
+        padding: 1.25rem;
+    }
+
+    .table table {
+        width: 34.375rem;
+    }
+
+    .left-table {
+        padding: 0.625rem;
+        width: 8.125rem;
+        font-size: 0.938rem;
+    }
+
+    .right-table {
+        padding: 0.625rem;
+        font-size: 0.938rem;
+        width: 6.25rem;
+    }
+
+    .button-container-4 {
+        padding-bottom: 3.125rem;
+    }
+
+    .button-4 {
+        height: 5rem;
+        width: 10rem;
+    }
+
+    .button-4 span {
+        font-size: 1.25rem;
+    }
+
+    .footer-logo {
+        padding: 1.25rem;
+    }
+
+    .footer-links-1 h2,
+    .footer-links-2 h2,
+    .contact h2 {
+        font-size: 1.563rem;
+    }
+
+    .locations ul li,
+    .footer-menu ul li a {
+        font-size: 1.125rem;
+    }
+
+    .phone-and-email p {
+        font-size: 0.813rem;
+    }
+
+    .socials {
+        padding: 1.875rem;
+    }
+
+    .icons {
+        padding: 0.313rem;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 868px) and (max-width: 1279px) {
+
+    .header {
+        height: 6.875rem;
+    }
+
+    .toggle-btn {
+        margin-top: 2.5rem;
+    }
+
+    .logo-image {
+        height: 5rem;
+    }
+
+    .nav-menu .menu-element {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu .menu-element {
+        font-size: 1.313rem;
+    }
+
+    .dropdown-menu.open {
+        height: 26.563rem;
+    }
+
+    .background-text h1 {
+        font-size: 3.125rem;
+        padding: 3.125rem 2.5rem;
+        top: 15.625rem;
+    }
+
+    .btn-1 {
+        padding: 1.875rem 2.813rem;
+        top: 34.375rem;
+        left: 10.313rem;
+    }
+
+    .call-to-action {
+        height: 23.75rem;
+    }
+
+    .btn-1 span {
+        font-size: 1.125rem;
+    }
+
+    .title-1 h2 {
+        font-size: 2.813rem;
+    }
+
+    .btn-2 {
+        padding: 1.563rem 2.188rem;
+    }
+
+    .btn-2 span {
+        font-size: 1.125rem;
+    }
+
+    .text-container-1 {
+        height: 28.125rem;
+    }
+
+    .paragraph-1, .paragraph-2, .paragraph-3 {
+        font-size: 1.75rem;
+    }
+
+    .slide-show-container {
+        height: 29.688rem;
+    }
+
+    .title-2 h2 {
+        font-size: 2.5rem;
+    }
+
+    .image-container img {
+        height: 21.875rem;
+        width: auto;
+    }
+
+    .text-container-2 {
+        height: 26.875rem;
+    }
+
+    .paragraph-4 p {
+        font-size: 1.875rem;
+        padding: 3.125rem;
+    }
+
+    .btn-3 {
+        padding: 1.563rem 2.5rem;
+    }
+
+    .btn-3 span {
+        font-size: 1.063rem;
+    }
+
+    .paragraph-5 p {
+        font-size: 1.625rem;
+    }
+
+    .paragraph-5 span {
+        font-size: 1.875rem;
+    }
+
+    .footer {
+        height: 34.375rem;
+    }
+
+    .footer-image {
+        height: 5rem;
+    }
+
+    .footer-links {
+        height: 18.75rem;
+    }
+
+    .footer-links-1 h2 {
+        font-size: 1.75rem;
+    }
+
+    .locations ul li {
+        font-size: 1.438rem;
+    }
+
+    .footer-links-2 h2 {
+        font-size: 1.75rem;
+    }
+
+    .footer-menu ul li {
+        font-size: 1.375rem;
+    }
+
+    .contact h2 {
+        font-size: 1.75rem;
+    }
+
+    .phone-and-email p {
+        font-size: 1.25rem;
+    }
+
+    .socials {
+        padding: 3.125rem;
+    }
+
+    .socials p {
+        font-size: 1.563rem;
+    }
+
+    .icon {
+        height: 2.25rem;
+    }
+
+    .facebook-icon {
+        height: 2.188rem;
+    }
+
+    .copyright p {
+        font-size: 1.438rem;
+    }
+
+    .context {
+        font-size: 1.563rem;
+        padding-bottom: 1.25rem;
+        width: auto;
+    }
+
+    .context p {
+        padding: 1.25rem;
+        text-align: center;
+    }
+
+    .table {
+        padding: 1.25rem;
+    }
+
+    .table table {
+        width: 34.375rem;
+    }
+
+    .left-table {
+        padding: 0.625rem;
+        width: 8.125rem;
+        font-size: 0.938rem;
+    }
+
+    .right-table {
+        padding: 0.625rem;
+        font-size: 0.938rem;
+        width: 6.25rem;
+    }
+
+    .button-container-4 {
+        padding-bottom: 3.125rem;
+    }
+
+    .button-4 {
+        height: 5rem;
+        width: 10rem;
+    }
+
+    .button-4 span {
+        font-size: 1.25rem;
+    }
+
+    .footer-logo {
+        padding: 1.25rem;
+    }
+
+    .footer-links-1 h2,
+    .footer-links-2 h2,
+    .contact h2 {
+        font-size: 1.563rem;
+    }
+
+    .locations ul li,
+    .footer-menu ul li a {
+        font-size: 1.125rem;
+    }
+
+    .phone-and-email p {
+        font-size: 0.813rem;
+    }
+
+    .socials {
+        padding: 0.938rem;
+    }
+
+    .icons {
+        padding: 0.313rem;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1919px) {
+    .header {
+        height: 8.438rem;
+    }
+
+    .logo-image {
+        height: 6.875rem;
+        padding: 0.813rem 4.563rem;
+    }
+
+    .nav-menu ul {
+        height: 9.375rem;
+    }
+
+    .menu-element {
+        margin: 1.25rem;
+        padding: 1.875rem 0.625rem;
+        text-align: center;
+        font-size: 1.5rem;
+        height: 1.875rem;
+    }
+
+    .background-text h1 {
+        font-size: 3.75rem;
+        top: 32%;
+        left: 7%;
+    }
+
+    .btn-1 {
+        top: 74%;
+        padding: 2.188rem 2.688rem;
+    }
+
+    .btn-1 span {
+        font-size: 1.438rem;
+    }
+
+    .call-to-action {
+        height: 26.563rem;
+    }
+
+    .title-1 h2 {
+        font-size: 3.438rem;
+        padding: 2.5rem;
+    }
+
+    .btn-2 {
+        padding: 2.5rem 3.125rem;
+    }
+
+    .btn-2 span {
+        font-size: 1.438rem;
+    }
+
+    .text-container-1 {
+        height: 31.875rem;
+    }
+
+    .paragraph-1,
+    .paragraph-2,
+    .paragraph-3 {
+        font-size: 2.063rem;
+    }
+
+    .title-2 h2 {
+        font-size: 2.688rem;
+    }
+
+    .image-container img {
+        height: 20.313rem;
+        width: auto;
+    }
+
+    .paragraph-4 p {
+        font-size: 2.188rem;
+    }
+
+    .btn-3 {
+        padding: 1.875rem 2.5rem;
+    }
+
+    .btn-3 span {
+        font-size: 1.25rem;
+    }
+
+    .socials {
+        padding: 1.25rem 4.688rem;
+    }
+}
